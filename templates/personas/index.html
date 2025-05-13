@@ -21,8 +21,8 @@
         <td>{{item ['nombre'] }}</td>
         <td>{{item ['Telefono'] }}</td>
         <td>{{item ['Fecha_nac'] }}</td>
-        <td><a href="#" class="btn btn-warning">Editar</a></td>
-        <td><a href="#" class="btn btn-danger">Eliminar</a></td>
+        <td><a href="/personas/edit/{{ item['id'] }}" class="btn btn-warning">Editar</a></td>
+        <td><a href="/personas/delete/{{ item['id'] }}" onclick="return(confirm('Esta seguro ???'))" class="btn btn-danger">Eliminar</a></td>
       </tr>
       {% endfor %}
     </tbody>
